@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-16"
+version: "2023-04-19"
 sort: by_weight
 ...
 # 一些杂项
@@ -278,9 +278,14 @@ SSH	SSH
 Secure Shell	SSH
 Secure Shell	SecureShell
 ISO	ISO
+International Organization for Standardization	ISO
 ISO 8601	ISO
 RFC	RFC
+Request for Comments	RFC
 RFC 3339	RFC
+RFCs	RFCs
+IETF	IETF
+Internet Engineering Task Force	IETF
 Pro Max	ProMax
 Aeron	Aeron
 Aeron Chair	AeronChair
@@ -1670,7 +1675,7 @@ LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
 Mozilla	Mozilla
-Mozilla	Firefox	MozillaFirefox
+Mozilla Firefox	MozillaFirefox
 Apache	Apache
 Steam	Steam
 App	App
@@ -2125,6 +2130,8 @@ DApps	DApps
 Uniswap	Uniswap
 SushiSwap	SushiSwap
 PancakeSwap	PancakeSwap
+JediSwap	JediSwap
+Orbiter	Orbiter
 MakerDAO	MakerDAO
 Compound	Compound
 Aave	Aave
@@ -2142,5 +2149,11 @@ Braavos Wallet	Braavos
 OneKey	OneKey
 Hamster	Hamster
 hamster	hamster
+hamsters	hamsters
 DYOR	DYOR
 Do Your Own Research	DYOR
+Noita	Noita
+Screen Studio	ScreenStudio
+Norah	Norah
+floccus	floccus
+Wappalyzer	Wappalyzer

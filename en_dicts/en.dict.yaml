@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-05-18"
+version: "2023-05-24"
 sort: by_weight
 ...
 # +_+
@@ -5612,7 +5612,7 @@ Djibouti	Djibouti
 # djs	djs
 # dk	dk
 # dl	dl
-dll	dll
+DLL	DLL
 # dlp	dlp
 # dm	dm
 # dma	dma
@@ -7700,6 +7700,7 @@ FTP	FTP
 # fu	fu
 fuck	fuck
 fucked	fucked
+fucker	fucker
 fuckers	fuckers
 # fuckin	fuckin
 fucking	fucking

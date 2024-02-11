@@ -3,6 +3,7 @@
 和	he, he, hu, huo, huo, huo	76
 都	dou, du	71
 说	shui, shuo	69
+那	na, na	67
 没	mei, mo	67
 还	hai, huan	67
 呢	ne, ni	65
@@ -10,9 +11,14 @@
 给	gei, ji	63
 地	de, di	57
 大	da, dai	57
-* 着	zhao, zhao, zhe, zhuo	55
+着	zhao, zhao, zhe, zhuo	55
 得	de, de, dei	54
-* 行	hang, heng, xing	47
+家	jia, jia	50
+谁	shei, shui	48
+行	hang, heng, xing	47
+地	de, di	47
+嗯	ng, ng, ng	46
+嗯	ng, ng, ng	46
 哪	na, na, ne	46
 卡	ka, qia	46
 区	ou, qu	44
@@ -23,15 +29,19 @@
 系	ji, xi	43
 强	jiang, qiang, qiang	42
 差	cha, cha, chai, ci	41
+了	le, liao	40
 哦	e, o, o	40
 便	bian, pian	40
 省	sheng, xing	39
+得	de, de, dei	39
 传	chuan, zhuan	39
 称	chen, cheng	39
 长	chang, zhang	39
 查	cha, zha	39
+查	cha, zha	39
 咋	za, ze, zha	38
 数	shu, shu, shuo	38
+谁	shei, shui	38
 读	dou, du	38
 种	chong, zhong, zhong	38
 单	chan, dan, shan	38
@@ -40,6 +50,7 @@
 洗	xi, xian	36
 血	xie, xue	36
 期	ji, qi	36
+长	chang, zhang	36
 提	di, ti	35
 曾	ceng, zeng	35
 恶	e, e, wu	34
@@ -53,11 +64,16 @@
 重	chong, zhong	33
 解	jie, jie, xie	32
 价	jia, jie	32
+还	hai, huan	32
+哦	e, o, o	32
+都	dou, du	32
+曾	ceng, zeng	32
 胖	pan, pang	31
 绿	lu, lu	31
 俩	lia, liang	31
 落	la, lao, luo	31
 调	diao, tiao	31
+着	zhao, zhao, zhe, zhuo	30
 员	yuan, yun	30
 句	gou, ju	30
 盖	gai, ge	30
@@ -73,6 +89,7 @@
 陆	liu, lu	28
 勒	le, lei	28
 吓	he, xia	28
+行	hang, heng, xing	28
 熟	shou, shu	27
 奇	ji, qi	27
 觉	jiao, jue	27
@@ -82,10 +99,12 @@
 塞	sai, sai, se	26
 术	shu, zhu	26
 氏	shi, zhi	26
+呢	ne, ni	26
 角	jiao, jue	26
 校	jiao, xiao	26
 核	he, hu	26
 夹	ga, jia, jia	26
+着	zhao, zhao, zhe, zhuo	25
 娜	na, nuo	25
 蒙	meng, meng, meng	25
 蒙	meng, meng, meng	25
@@ -107,6 +126,7 @@
 壳	ke, qiao	23
 靓	jing, liang	23
 划	hua, hua	23
+的	de, di, di, di	23
 伯	bai, bo	23
 咳	hai, ke	22
 朝	chao, zhao	22
@@ -129,8 +149,10 @@
 尾	wei, yi	20
 缩	su, suo	20
 什	shen, shi	20
+那	na, na	20
 摩	ma, mo	20
 脉	mai, mo	20
+弄	long, nong	20
 咯	ge, ka, lo, luo	20
 攒	cuan, zan	20
 兹	ci, zi	20
@@ -164,6 +186,7 @@
 臂	bei, bi	18
 择	ze, zhai	17
 咽	yan, yan, ye	17
+血	xie, xue	17
 粘	nian, zhan	17
 俩	lia, liang	17
 嚼	jiao, jiao, jue	17
@@ -192,15 +215,22 @@
 乐	le, yue	15
 伽	ga, jia, qie	15
 卒	cu, zu	15
+称	chen, cheng	15
 柏	bai, bo	15
 泊	bo, po	15
 腌	a, yan	14
 覃	qin, tan	14
 纤	qian, xian	14
+哪	na, na, ne	14
+没	mei, mo	14
 烙	lao, luo	14
 咳	hai, ke	14
+差	cha, cha, chai, ci	14
+传	chuan, zhuan	14
 曝	bao, pu	14
 刨	bao, pao	14
+说	shui, shuo	13
+说	shui, shuo	13
 厦	sha, xia	13
 纤	qian, xian	13
 牟	mou, mu	13
@@ -208,6 +238,7 @@
 棱	leng, leng, ling	13
 茄	jia, qie	13
 楷	jie, kai	13
+见	jian, xian	13
 藉	ji, jie	13
 纶	guan, lun	13
 蛤	ge, ha	13
@@ -225,6 +256,7 @@
 辟	bi, pi	12
 瀑	bao, pu	12
 扎	za, zha, zha	11
+咋	za, ze, zha	11
 削	xiao, xue	11
 尉	wei, yu	11
 栅	shan, zha	11
@@ -233,11 +265,13 @@
 蔓	man, man, wan	11
 筠	jun, yun	11
 藉	ji, jie	11
+和	he, he, hu, huo, huo, huo	11
 艮	gen, gen	11
 艮	gen, gen	11
 莞	guan, wan	11
 涡	guo, wo	11
 驮	duo, tuo	11
+大	da, dai	11
 绰	chao, chuo	11
 绰	chao, chuo	11
 畜	chu, xu	11
@@ -290,11 +324,14 @@
 吁	xu, yu, yu	8
 圩	wei, xu	8
 圩	wei, xu	8
+数	shu, shu, shuo	8
 殖	shi, zhi	8
 俟	qi, si	8
 牟	mou, mu	8
+卡	ka, qia	8
 筠	jun, yun	8
 颉	jie, xie	8
+系	ji, xi	8
 芥	gai, jie	8
 兹	ci, zi	8
 伺	ci, si	8
@@ -316,12 +353,16 @@
 浚	jun, xun	7
 浚	jun, xun	7
 校	jiao, xiao	7
+会	hui, kuai	7
+差	cha, cha, chai, ci	7
+单	chan, dan, shan	7
 膀	bang, pang, pang	7
 耙	ba, pa	7
 爪	zhao, zhua	6
 峙	shi, zhi	6
 折	she, zhe, zhe	6
 覃	qin, tan	6
+哪	na, na, ne	6
 绿	lu, lu	6
 碌	liu, lu	6
 碌	liu, lu	6
@@ -339,6 +380,7 @@
 匙	chi, shi	6
 骠	biao, piao	6
 蚌	bang, beng	6
+区	ou, qu	5
 於	yu, yu	5
 铊	ta, tuo	5
 莘	shen, xin	5
@@ -347,6 +389,7 @@
 棱	leng, leng, ling	5
 烙	lao, luo	5
 落	la, lao, luo	5
+期	ji, qi	5
 奇	ji, qi	5
 侥	jiao, yao	5
 峤	jiao, qiao	5
@@ -361,6 +404,8 @@
 沓	da, ta	5
 嚓	ca, cha	5
 澄	cheng, deng	5
+查	cha, zha	5
+查	cha, zha	5
 堡	bao, bu, pu	5
 槟	bin, bing	5
 艾	ai, yi	5
@@ -368,11 +413,13 @@
 欸	ai, ê̄, ế, ê̌, ề	4
 欸	ai, ê̄, ế, ê̌, ề	4
 拶	za, zan	4
+咋	za, ze, zha	4
 琢	zhuo, zuo	4
 著	zhu, zhuo	4
 柞	zha, zuo	4
 芫	yan, yuan	4
 芫	yan, yuan	4
+省	sheng, xing	4
 蹊	qi, xi	4
 栎	li, yue	4
 咀	ju, zui	4
@@ -380,9 +427,11 @@
 犍	jian, qian	4
 解	jie, jie, xie	4
 郇	huan, xun	4
+和	he, he, hu, huo, huo, huo	4
 貉	hao, he	4
 貉	hao, he	4
 颈	geng, jing	4
+给	gei, ji	4
 鹄	gu, hu	4
 鹄	gu, hu	4
 炅	gui, jiong	4
@@ -429,6 +478,7 @@
 伺	ci, si	3
 幢	chuang, zhuang	3
 啜	chuai, chuo	3
+单	chan, dan, shan	3
 堡	bao, bu, pu	3
 剥	bao, bo	3
 膀	bang, pang, pang	3
@@ -441,6 +491,7 @@
 奘	zang, zhuang	2
 奘	zang, zhuang	2
 钥	yao, yue	2
+洗	xi, xian	2
 荥	xing, ying	2
 荥	xing, ying	2
 尉	wei, yu	2
@@ -462,6 +513,7 @@
 泷	long, shuang	2
 趄	ju, qie	2
 趄	ju, qie	2
+家	jia, jia	2
 荠	ji, qi	2
 浒	hu, xu	2
 吓	he, xia	2
@@ -479,13 +531,16 @@
 嚓	ca, cha	2
 卒	cu, zu	2
 茈	ci, zi	2
+种	chong, zhong, zhong	2
 禅	chan, shan	2
 埔	bu, pu	2
 骠	biao, piao	2
 泌	bi, mi	2
+恶	e, e, wu	1
 拶	za, zan	1
 啁	zhao, zhou	1
 啁	zhao, zhou	1
+约	yao, yue	1
 殷	yan, yin	1
 喁	yong, yu	1
 喁	yong, yu	1
@@ -510,6 +565,7 @@
 疟	nue, yao	1
 娜	na, nuo	1
 摩	ma, mo	1
+万	mo, wan	1
 缪	miao, miu, mou	1
 埋	mai, man	1
 偻	lou, lu	1
@@ -523,6 +579,7 @@
 犍	jian, qian	1
 楷	jie, kai	1
 颉	jie, xie	1
+强	jiang, qiang, qiang	1
 价	jia, jie	1
 亟	ji, qi	1
 郇	huan, xun	1
@@ -536,6 +593,9 @@
 盖	gai, ge	1
 繁	fan, po	1
 叨	dao, dao, tao	1
+提	di, ti	1
+度	du, duo	1
+读	dou, du	1
 喋	die, zha	1
 铫	diao, yao	1
 铫	diao, yao	1
@@ -545,6 +605,7 @@
 杻	chou, niu	1
 铛	cheng, dang	1
 喳	cha, zha	1
+车	che, ju	1
 尺	che, chi	1
 臭	chou, xiu	1
 帱	chou, dao	1

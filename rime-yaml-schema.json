@@ -473,6 +473,10 @@
                     "type": "boolean",
                     "pattern": "(true|false)",
                     "description": "开关：以空格键作为输入码。"
+                },
+                "__patch": {
+                    "type": "object",
+                    "description": "补丁"
                 }
             }
         },

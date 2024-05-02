@@ -24,6 +24,7 @@ patch:
     turn_down_cand: "Control+j"   # 匹配当前输入码后降频指定的候选字词
     switch_comment: "Control+n"   # 切换注释(小鹤形码 / 带调拼音 / 无)
     commit_comment: "Control+p"   # 注释上屏
+    switch_english: "Control+g"   # 切换到英文输入模式
     bindings/+:
       - {when: has_menu,  accept: semicolon, send: 2}
       - {when: has_menu,  accept: apostrophe, send: 3}       ## 单引号用于第3候选

@@ -8,6 +8,7 @@ local function fly_fixed(input, env)
     local cands = {}
     local prev_cand_ok = true
     local config = env.engine.schema.config
+    local pin_mark = config:get_string("pin_word/comment_mark") or "🔝"
     local schema_id = config:get_string("translator/dictionary") -- 多方案共用字典取主方案名称
     local reversedb = ReverseLookup(schema_id)
     local preedit_code = env.engine.context:get_commit_text()
@@ -15,10 +16,10 @@ local function fly_fixed(input, env)
         local cand_text = cand.text:gsub(" ", "")
         if
             (cand.type ~= "user_table")
-            and (not cand.comment:match("^🔝$"))
+            and (cand:get_dynamic_type() ~= "Shadow")
             and (not cand_text:match("[a-zA-Z]"))
             and (not preedit_code:match("[%u%p]"))
-            and (cand:get_dynamic_type() ~= "Shadow")
+            and (not cand.comment:match("^" .. pin_mark .."$"))
             and ((#preedit_code % 2 ~= 0) and (#preedit_code <= 7))
         then
             local last_char = last_character(cand_text)

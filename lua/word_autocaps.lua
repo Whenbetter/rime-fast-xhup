@@ -1,5 +1,4 @@
 -- 输入的内容大写前2个字符，自动转小写词条为全词大写；大写第一个字符，自动转写小写词条为首字母大写
--- local puts = require("tools/debugtool")
 
 local function autocap_filter(input, env)
 	for cand in input:iter() do

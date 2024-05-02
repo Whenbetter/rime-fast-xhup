@@ -7,7 +7,7 @@
 patch:
   schema_list:
     - schema: flypy_xhfast
-    - schema: flypy_chaizi
+    - schema: flypy_radical
     - schema: melt_eng
     - schema: flypy_phrase
     # - schema: flypy_zrmfast

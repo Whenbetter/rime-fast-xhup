@@ -141,3 +141,6 @@ launcher_filter = launcher.filter
 idiom_expand = require("idiom_abbr_expand")
 idiom_expand_processor = idiom_expand.processor
 idiom_expand_translator = idiom_expand.translator
+
+flypy_switcher = require("flypy_switcher")
+flypy_switcher_processor = flypy_switcher.processor

@@ -36,14 +36,14 @@ engine:
   translators:
     - table_translator
     - punct_translator
-    - lua_translator@en_custom_translator
     - lua_translator@laTex_translator
-    - lua_translator@engword_autocaps_translator
+    - lua_translator@word_custom_translator
+    - lua_translator@word_autocaps_translator
   filters:
     - uniquifier
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-_/`
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-_/
   delimiter: " '"
   algebra:
     - xform/^a/!/
@@ -71,5 +71,4 @@ recognizer:
   import_preset: default
   patterns:
     uppercase: ''
-    # tex_translator: "^xl(.*)$"
 

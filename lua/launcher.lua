@@ -137,12 +137,7 @@ function processor.func(key, env)
                 cmd(system_name, "", path)
             elseif action == "exec" then
                 local _cmdString = app_command_items["Favors"][first_menu_selected_text]["items"][candidateText]
-                local cmdString
-                if _cmdString and _cmdString:match("^/") then
-                    cmdString = _cmdString:gsub(" ", "\\ ", 1)
-                else
-                    cmdString = _cmdString
-                end
+                local cmdString = _cmdString:match("^/") and _cmdString:gsub(" ", "\\ ", 1) or _cmdString
                 cmd(system_name, "exec", cmdString)
             else
                 engine:commit_text(candidateText)
@@ -295,6 +290,10 @@ function translator.func(input, seg, env)
             local cand = Candidate("favor", seg.start, seg._end, _text, "")
             cand.quality = 999
             yield(cand)
+        else
+            local cand = Candidate("unknown", seg.start, seg._end, "未匹配到二级菜单", "")
+            cand.quality = 999
+            yield(cand)
         end
     end
 
@@ -321,12 +320,15 @@ function filter.init(env)
     env.app_launch_prefix = env.launcher_config[1]
     env.favor_cmd_prefix = env.launcher_config[2]
     env.favor_items = env.launcher_config[3]["Favors"]
+    env.system_name = detect_os()
 end
 
 function filter.func(input, env)
     local input_code = env.engine.context:get_commit_text():gsub(" ", "")
     local favorCmdPrefix = env.favor_cmd_prefix
     local appLaunchPrefix = env.app_launch_prefix
+    local fav_items = env.favor_items
+    local system_name = env.system_name
     local command_cands = {}
     local other_cands = {}
     for cand in input:iter() do
@@ -338,6 +340,25 @@ function filter.func(input, env)
         else
             table.insert(other_cands, cand)
         end
+    end
+
+    if input_code:match("^" .. favorCmdPrefix) and (second_menu_selected_text) then
+        local commitText = fav_items[first_menu_selected_text]["items"][second_menu_selected_text]
+        local action = fav_items[first_menu_selected_text]["action"]
+        if action == "open" then
+            cmd(system_name, "", commitText)
+        elseif action == "exec" then
+            local cmdString = commitText:match("^/") and commitText:gsub(" ", "\\ ", 1) or commitText
+            cmd(system_name, "exec", cmdString)
+        else
+            env.engine:commit_text(commitText)
+        end
+        env.engine.context:clear()
+        favor_items = nil
+        second_menu_items = nil
+        first_menu_selected_text = nil
+        second_menu_selected_text = nil
+        return 1 -- kAccepted
     end
 
     if command_cands then

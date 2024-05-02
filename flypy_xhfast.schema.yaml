@@ -60,8 +60,8 @@ engine:
     - express_editor
   segmentors:
     - ascii_segmentor
-    - matcher
     - abc_segmentor
+    - matcher
     - affix_segmentor@make_sentence
     - affix_segmentor@chinese_number
     - affix_segmentor@easy_en
@@ -95,7 +95,7 @@ engine:
     - lua_translator@word_autocommit_translator       # [ 单字全码和部分成语短语自动触发
   filters:
     - simplifier
-    - simplifier@simplificationlize
+    - simplifier@simplification
     - simplifier@emoji
     - lua_filter@fly_fixed_filter
     - lua_filter@word_autocaps_filter
@@ -112,7 +112,7 @@ engine:
     - uniquifier                                      #  只能放到最后!
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA[_/`]
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA[_/]
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
@@ -277,8 +277,8 @@ punctuator:
     "%": ["%", ％, "°", "℃", ‰, ‱, ℉, ℅, ℆, ℀, ℁, ⅍]
     "$": [￥, "$", "€", "£", "¥", "¢", "¤", ₩]
     "*": ["*", ＊, ·, ・, ×, ※, ❂, ⁂, ☮, ☯, ☣]
-    "[": [「, 【, 〔, ［, 〚, 〘]
-    "]": [」, 】, 〕, ］, 〛, 〙]
+    "[": ['[',「, 【, 〔, ［, 〚, 〘]
+    "]": [']', 」, 】, 〕, ］, 〛, 〙]
     "{": [『, 〖, ｛]
     "}": [』, 〗, ｝]
     "#": "#"
@@ -305,33 +305,34 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    week: "^/wk"
-    time: "^/wt"
-    date: "^(/wd|/rq)"
-    chinese_lunar: "^/nl"
-    history: "^/hs"
-    shortcuts: "^/fj"
+    week: "^/wk$"
+    time: "^/wt$"
+    date: "^(/wd|/rq)$"
+    chinese_lunar: "^/nl$"
+    history: "^/hs$"
+    shortcuts: "^/fj$"
+    laTeX_formula: "^/lt(.*)$"
     easy_en: "^/oe[a-z]*$"
     flypy_help: "^/(oh|help)$"
     flypy_key_help: "^/ok[a-z]*$"
-    chinese_number: "^/cn[0-9.]+$"
-    laTeX_formula: "^/lt(.*)$"
+    chinese_number: "^/cn[0-9.]*$"
     radical_lookup: "~[a-z]+'?$"            # ~ 引导部件拆字, 使用小鹤双拼编码
     make_sentence: "^[a-z]+[`][a-z`]*$"     # ` 引导精准造词
     punct: "^(/([0-9]0?|[A-Za-z]+))|(;[A-Za-z]+)$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$"
 
-simplificationlize:
+simplification:
   option_name: simplification
   opencc_config: t2s.json
   tips: none
-  excluded_types: [radical_lookup, chinese_number, chinese_lunar]
+  excluded_types: ["radical_lookup", "chinese_number", "chinese_lunar"]
 
 emoji:
   opencc_config: emoji.json
   option_name: emoji
   tag: emoji
-  excluded_types: [radical_lookup]
+  tags: [ abc ]
+  excluded_types: ["history"]
 
 flypy_key_help:
   tag: flypy_key_help
@@ -380,11 +381,17 @@ radical_lookup:
   preedit_format:
   # - xlit/hspnz/一丨丿丶乙/
 
-history:                  # 上屏历史记录
+history:                      # 上屏历史记录
   tips: "上屏历史"
   tag: history
   prefix: "/hs"
   size: 30
   history_num_max: 30
   initial_quality: 1000
-  excluded_type: "punct"
+  excluded_types: ["punct"]
+
+pin_word:                     # 词条置顶配置
+  pin_word_key: "Control+t"   # 词条置顶快捷键, 优先级高于`key_binder`全局配置
+  word_quality: 1000
+  comment_mark: "🔝"          # 不能留空
+  excluded_types: ["flypy_key_help", "easy_en", "radical_lookup"]

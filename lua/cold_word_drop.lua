@@ -174,7 +174,7 @@ function cold_word_drop.filter(input, env)
     local context = engine.context
     local cands = {}
     local prev_cand_text = nil
-    local idx = config:get_int("cold_wold_reduce_config/idx") or 4
+    local idx = config:get_int("cold_wold_reduce/idx") or 4
     local cpreedit_code = context:get_preedit().text:gsub("[^%a]", "")
 
     for cand in input:iter() do

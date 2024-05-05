@@ -206,7 +206,7 @@ reverse_lookup:
 
 quanpin:
   tag: quanpin
-  dictionary: rime_ice ## 用户可自行改为扩展后的词典
+  dictionary: luna_pinyin ## 用户可自行改为扩展后的词典
   prism: luna_pinyin
   enable_completion: true
   prefix: "oq"

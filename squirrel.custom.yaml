@@ -9,12 +9,15 @@ patch:
 
   style:
     # 註：預設的配色方案及代碼（指定爲 style/color_scheme 系統默認色系 - native）
-    color_scheme: catppuccin_frappe                   # macos明亮主题
-    color_scheme_dark: catppuccin_macchiato           # macos黑暗主题
+    color_scheme: songhe                        # macos明亮主题
+    color_scheme_dark: catppuccin_frappe        # macos黑暗主题
+    # color_scheme_dark: catppuccin_macchiato   # macos黑暗主题
 
     show_paging: true
     inline_preedit: false
-    alpha: 0.97                                       # 透明度, 0~1
+    mutual_exclusive: false                           # 色不叠加： false | true
+    shadow_size: 1
+    alpha: 0.95                                       # 透明度, 0~1
     translucency: 0.98
     corner_radius: 10
     border_height: 0
@@ -64,7 +67,6 @@ patch:
     catppuccin_frappe:
       name: Catppuccin Frappe
 
-      mutual_exclusive: false                      # 色不叠加： false | true
       text_color: 0xDFBDBC
       back_color: 0x3C2C2B
       label_color: 0xCEADA5                        # 预选栏编号颜色 Subtext0
@@ -73,6 +75,7 @@ patch:
       preedit_back_color: 0x232634
       comment_text_color: 0xDFBDBC
       candidate_text_color: 0xD68381
+      # candidate_back_color: 0x3C2C2B 
       hilited_text_color: 0x000000
       hilited_back_color: 0xDFBDBC
       hilited_shadow_color: #303546                # 高亮编码阴影
@@ -82,11 +85,12 @@ patch:
       hilited_candidate_label_color: 0xF7A6CB      # 第一候选项编号颜色 Surface0
       hilited_candidate_shadow_color: #303546      # 高亮候选阴影
       candidate_list_layout: stacked               # 候选排布: 层叠 stacked | 行 linear
+      # nextpage_color: 0xC73262                   # 下一页
+      # prevpage_color: 0x000000                   # 上一页
 
     catppuccin_macchiato:
       name: Catppuccin Macchiato
 
-      mutual_exclusive: false                      # 色不叠加： false | true
       back_color: 0x303546                         # 候选条背景色 Crust
       border_color: 0x30201E                       # 边框色 Mantle
       text_color: 0xE0C0B8                         # 拼音行文字颜色 Subtext1
@@ -105,18 +109,18 @@ patch:
       author: 空山明月 <sqqlove123@163.com>
       text_color: 0xB2CECC 
       back_color: 0x4E7160
-      border_color: 0x38667D
-      candidate_back_color: 0x4E7160 
-      hilited_candidate_border_color: 0x434C50
-      comment_text_color: 0xB2CECC
-      hilited_comment_text_color: 0x263030
       label_color: 0xB2CECC
-      hilited_label_color: 0x072FA9
+      border_color: 0x38667D
+      comment_text_color: 0xB2CECC
+      candidate_back_color: 0x4E7160 
+      hilited_label_color: 0x606cff
       hilited_mark_color: 0xffffff
       hilited_text_color: 0xB2CECC
       hilited_back_color: 0x26332C
+      hilited_comment_text_color: 0x263030
       hilited_candidate_text_color: 0x263030
       hilited_candidate_back_color: 0xC0D9D7
+      hilited_candidate_border_color: 0x434C50
 
   # 特定App默认中/英文输入
   app_options:

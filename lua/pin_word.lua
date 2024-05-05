@@ -101,7 +101,6 @@ function translator.func(input, seg, env)
 end
 
 function filter.func(input, env)
-    -- local comment_text = env.comment_mark
     local input_code = env.engine.context:get_commit_text():gsub(" ", "")
     local pin_cands = {}
     local other_cands = {}
